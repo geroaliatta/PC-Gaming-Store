@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Gaming Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="../estilos/estilo.css">
+</head>
+<body>
+    <header>
+        <div class="logoTitulo">
+            <i class="fa-sharp fa-solid fa-headset logo"></i>
+            <h1>PC Gaming Store</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="../index.html" class="">Home</a>
+                </li>
+                <li>
+                    <a href="#" class="">Tienda</a>
+                </li>
+                <li>
+                    <a href="gratis.html" class="">Juegos Gratis</a>
+                </li>
+                <button class="colorPag" id="colorPag">
+					<span><i class="fas fa-sun"></i></span>
+					<span><i class="fas fa-moon"></i></span>
+				</button>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="tiendaCarrito">
+            <h2>Tienda</h2>
+            <button class="botonCarrito"><i class="fa-solid fa-cart-shopping iconoCarrito"></i></button>
+            
+        </div>
+        
+
+        <section class="sectionCarro" id="carrito">
+            <h3>Carrito</h3>
+            <table class="table table-dark">
+                <thead>
+                    <tr>
+                        <th>Juego</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+        
+                </tbody>
+                <tfoot>
+                    <tr class="trTotal" id="total">
+                        <th>TOTAL</th>
+                        <th class="totalCarrito">$ 0</th>
+                        <th></th>
+                        <th><button class="botonFinalizar" type="button">Finalizar compra</button></th>
+                        
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        <section class="sectionTienda">
+            <article class="articuloTienda">
+                <div class="divTienda">
+                    <img src="../media/juegos/spiderman-miles.jpg" alt="" class="imgTienda">
+                    <div class="divTiendaCont">
+                        <h4 class="tituloTienda">Marvel’s Spider-Man: Miles Morales</h4>
+                        <p class="descripJuego">Luego de los eventos de Marvel's Spider-Man Remasterizado, el adolescente Miles Morales intenta adaptarse a la vida en su nuevo hogar intentando seguir los pasos de su mentor, Peter Parker, como el nuevo Spider-Man.</p>
+                        <span class="precioJuego">$ 4999,00</span>
+                        <button class="botonProx">Próximamente</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="articuloTienda">
+                <div class="divTienda">
+                    <img src="../media/juegos/spiderman-remastered.jpg" alt="" class="imgTienda">
+                    <div class="divTiendaCont">
+                        <h4 class="tituloTienda">Marvel’s Spider-Man Remastered</h4>
+                        <p class="descripJuego">Marvel's Spider-Man Remasterizado nos trae a un Peter Parker más experimentado que lucha contra organizaciones criminales y villanos emblemáticos en la ciudad de Nueva York de Marvel. Nuestro protagonista se esfuerza por balancear su caótica vida personal y su carrera, mientras el destino de Nueva York descansa sobre sus hombros.</p>
+                        <span class="precioJuego">$ 4999,00</span>
+                        <!-- <a href="#carrito" class="botonComprar">Comprar</a> -->
+                        <button class="botonComprar">Comprar</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="articuloTienda">
+                <div class="divTienda">
+                    <img src="../media/juegos/cyberpunk.jpg" alt="" class="imgTienda">
+                    <div class="divTiendaCont">
+                        <h4 class="tituloTienda">Cyberpunk 2077</h4>
+                        <p class="descripJuego">Cyberpunk 2077 es un RPG de aventura y acción de mundo abierto ambientado en el futuro sombrío de Night City, una peligrosa megalópolis obsesionada con el poder, el glamur y las incesantes modificaciones corporales.</p>
+                        <span class="precioJuego">$ 2199,00</span>
+                        <button class="botonComprar">Comprar</button>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="articuloTienda">
+                <div class="divTienda">
+                    <img src="../media/juegos/reddead.jpg" alt="" class="imgTienda">
+                    <div class="divTiendaCont">
+                        <h4 class="tituloTienda">Red Dead Redemption 2
+                        </h4>
+                        <p class="descripJuego">Con más de 175 premios al Juego del año y más de 250 valoraciones perfectas, Red Dead Redemption 2 es la épica historia de Arthur Morgan y la banda de Van der Linde, que huyen por Estados Unidos en los albores del siglo XX. También incluye acceso al mundo multijugador compartido de Red Dead Online.</p>
+                        <span class="precioJuego">$ 2499,00</span>
+                        <button class="botonComprar">Comprar</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="articuloTienda">
+                <div class="divTienda">
+                    <img src="../media/juegos/godofwar.jpg" alt="" class="imgTienda">
+                    <div class="divTiendaCont">
+                        <h4 class="tituloTienda">God of War</h4>
+                        <p class="descripJuego">Habiendo consumado su venganza contra los dioses el Olimpo años atrás, Kratos ahora vive como un hombre en el reino de los dioses y los monstruos nórdicos. En este hostil e inhóspito mundo, debe pelear por sobrevivir... y enseñarle a su hijo a hacer lo mismo.</p>
+                        <span class="precioJuego">$ 4199,00</span>
+                        <button class="botonComprar">Comprar</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="articuloTienda">
+                <div class="divTienda">
+                    <img src="../media/juegos/horizon.jpg" alt="" class="imgTienda">
+                    <div class="divTiendaCont">
+                        <h4 class="tituloTienda">Horizon Zero Dawn™ Complete Edition</h4>
+                        <p class="descripJuego">Vive la misión legendaria de Aloy para revelar los secretos de una futura Tierra dominada por máquinas. ¡Usa ataques devastadores contra tus presas y explora un majestuoso mundo abierto en este galardonado RPG de acción!</p>
+                        <span class="precioJuego">$ 4199,00</span>
+                        <button class="botonComprar">Comprar</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="articuloTienda">
+                <div class="divTienda">
+                    <img src="../media/juegos/eldenring.jpg" alt="" class="imgTienda">
+                    <div class="divTiendaCont">
+                        <h4 class="tituloTienda">Elden Ring</h4>
+                        <p class="descripJuego">EL NUEVO RPG DE ACCIÓN DE FANTASÍA. Levántate, tiznado, y déjate guiar por la gracia para esgrimir el poder del Anillo de Elden y convertirte en un Señor de Elden en las Tierras Intermedias.</p>
+                        <span class="precioJuego">$ 6499,00</span>
+                        <button class="botonComprar">Comprar</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="articuloTienda">
+                <div class="divTienda">
+                    <img src="../media/juegos/gtav.jpg" alt="" class="imgTienda">
+                    <div class="divTiendaCont">
+                        <h4 class="tituloTienda">Grand Theft Auto V</h4>
+                        <p class="descripJuego">Grand Theft Auto V para PC ofrece a los jugadores la opción de explorar el galardonado mundo de Los Santos y el condado de Blaine con una resolución de 4K y disfrutar del juego a 60 fotogramas por segundo.</p>
+                        <span class="precioJuego">$ 899,00</span>
+                        <button class="botonComprar">Comprar</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="articuloTienda">
+                <div class="divTienda">
+                    <img src="../media/juegos/fifa23.jpg" alt="" class="imgTienda">
+                    <div class="divTiendaCont">
+                        <h4 class="tituloTienda">EA SPORTS™ FIFA 23</h4>
+                        <p class="descripJuego">Vive toda la emoción del torneo más importante del futbol con EA SPORTS™ FIFA 23 y la actualización de la FIFA World Cup™ masculina, disponible el 9 de noviembre sin costo adicional.</p>
+                        <span class="precioJuego">$ 8999,00</span>
+                        <button class="botonComprar">Comprar</button>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="infoGA">
+            <i class="fa-solid fa-circle-nodes"></i>
+            <p>Diseñado por<br>Gerónimo Aliatta</p>
+        </div>
+        <p>PC Gaming Store</p>
+
+        <div class="iconosFooter">
+            <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+
+            
+            
+            
+            
+            
+        </div>
+
+    </footer>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../funciones/funcion.js"></script>
+    <script src="../funciones/dark.js"></script>
+</body>
+</html>

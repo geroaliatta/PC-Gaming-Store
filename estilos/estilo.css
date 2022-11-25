@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100;300;400;500;700;900&family=Noto+Sans:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&display=swap');
+
+* {
+    Margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(238, 238, 238);
+    background-image: url(../media/background/light/gaming-pattern.png);
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.logoTitulo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.logo{
+    color: #580ABE;
+    font-size: 5rem;
+    text-shadow: 3px 2px 2px black;
+}
+
+h1{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 3rem;
+    color: #580ABE;
+    text-shadow: 3px 2px 2px black;
+}
+
+h2{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2rem;
+    color: #580ABE;
+    text-shadow: 3px 2px 2px black;
+    padding: 20px 0;
+}
+
+.sectionCarro{
+    background-color: #580ABE;
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+    padding: 10px 20px;
+}
+
+td{
+    text-align: center;
+
+}
+
+h3{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.2rem;
+    color: #FFFFFF;
+    text-shadow: 3px 2px 2px black;
+    padding: 20px 0;
+}
+
+nav{
+    background-color: #730FF6;
+    margin-top: 20px;
+    padding: 10px 0;
+}
+
+header{
+    background-image: url(../media/background/light/white-waves.png);
+    padding-top: 20px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: #E4D0FF;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #FFFFFF;
+    font-size: 1.7rem;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.videoHome{
+    height: 100%;
+    width: 100%;
+
+}
+
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #580ABE;
+    height: 100px;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+footer i{
+    font-size: 40px;
+    text-decoration: none;
+    color: #FFFFFF;
+    padding-right: 2px;
+}
+
+
+
+footer p{
+    color: #FFFFFF;
+    text-shadow: 3px 2px 2px black;
+}
+
+
+
+.infoGA{
+    color: #FFFFFF;
+}
+
+.infoGA:hover{
+    color: #000000;
+    transition: 0.2s;
+}
+
+
+.fa-square-facebook:hover{
+    color: #003bbb;
+    transition: 0.2s;
+}
+
+.fa-square-twitter:hover{
+    color: #0676f7;
+    transition: 0.2s;
+}
+
+.fa-square-instagram:hover{
+    color: #cf0eaf;
+    transition: 0.2s;
+}
+
+/* INICIO CSS TIENDA */
+
+.tiendaCarrito{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 80px;
+}
+
+.iconoCarrito{
+    font-size: 3rem;
+    color: #580ABE;
+}
+
+.iconoCarrito:hover{
+    color: #730FF6;
+    cursor: pointer;
+}
+
+.botonCarrito{
+    border: none;
+}
+
+.sectionTienda{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.articuloTienda{
+    height: 550px;
+    margin: 0 10px;
+}
+
+.divTienda{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    
+    padding: 2rem 0;
+    
+}
+
+.divTiendaCont{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tituloTienda{
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+.tituloCarrito{
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+.descripJuego{
+    font-weight: 300;
+    padding: 0 20px;
+}
+
+.precioJuego{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.precioCarrito{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.totalCarrito{
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.botonComprar{
+    background-color: #730FF6;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding: 17px 34px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    cursor: pointer
+}
+
+.botonComprar:hover{
+    background-color: #169705;
+}
+
+.botonProx{
+    background-color: #323232;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding: 18px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    cursor: not-allowed;
+}
+
+.botonBorrar{
+    background-color: #730FF6;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding: 5px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.botonBorrar:hover{
+    background-color: #f60f0f;
+}
+
+
+
+.botonFinalizar{
+    background-color: #169705;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Noto Sans', sans-serif;
+    cursor: pointer;
+}
+
+.botonFinalizar:hover{
+    background-color: #00ce00;
+}
+
+/* DARK MODE */
+
+.colorPag{
+    background: #343D5B;
+	border-radius: 1000px;
+	border: none;
+	position: relative;
+	cursor: pointer;
+	display: flex;
+	outline: none;
+}
+
+.colorPag::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: #F1F1F1;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 100px;
+    transition: .3s ease all;
+    box-shadow: 0px 0px 2px 2px rgba(0,0,0,.2);
+}
+
+.colorPag.active {
+    background: #E4D0FF;
+    color: #000;
+}
+
+.colorPag.active::after {
+    right: 0;
+    left: unset;
+}
+
+.colorPag span {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    background: none;
+    color: #fff;
+}
+
+.darkMode{
+    background-color: #212121;
+    background-image: url(../media/background/black/px_by_Gre3g.png);
+    color: #FFFFFF;
+}
+
+.darkMode header{
+    background-image: url(../media/background/black/black_mamba.png);
+}
+
+.darkMode .sectionCarro{
+    color: #212121;
+}
+
+.darkMode h3{
+    color: #212121;
+
+}
+.darkMode .botonProx{
+    background-color: #E4D0FF;
+    color: #580ABE;
+}
+
+.darkMode .botonCarrito{
+    background: rgba(0,0,0,0);
+}
+
+
+
+.inputCantidad {
+    max-width: 45px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #eee;
+    padding: 5px;
+}
+
+.filtro{
+    display: none;
+}
