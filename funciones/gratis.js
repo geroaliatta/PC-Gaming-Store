@@ -32,7 +32,6 @@ fetch('https://free-to-play-games-database.p.rapidapi.com/api/games?platform=pc'
 
             juegos_gratis.append(articulo_gratis);
 
-            const buscador = document.querySelector("#buscador");
             
 
             document.addEventListener("keyup", e => {
