@@ -349,7 +349,7 @@ footer p{
     margin-top: 10px;
     width: 160px;
     height: 35px;
-    border-radius: 17% 83% 15% 85% / 85% 10% 90% 15%;
+    border-radius: 25% 10%;;
 }
 
 #buscador::placeholder{
