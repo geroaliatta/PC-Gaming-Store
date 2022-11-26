@@ -1,3 +1,7 @@
+// APLICACION DE API - https://www.freetogame.com/api-doc - BASE DE DATOS JUEGOS GRATIS APLICADA EN DICHA SECCION
+
+
+
 const options = {
     method: 'GET',
     headers: {
@@ -32,7 +36,7 @@ fetch('https://free-to-play-games-database.p.rapidapi.com/api/games?platform=pc'
 
             juegos_gratis.append(articulo_gratis);
 
-            
+// UTILIZO EVENTO PARA GENERAR UNA BUSQUEDA DE JUEGOS
 
             document.addEventListener("keyup", e => {
 

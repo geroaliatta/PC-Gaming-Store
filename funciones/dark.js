@@ -1,6 +1,4 @@
-
-
-// DARK MODE
+// DARK MODE - SE UTILIZA LOCALSTORAGE
 
 const boton_color = document.querySelector("#colorPag");
 

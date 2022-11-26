@@ -12,7 +12,6 @@ finalizarCompra.addEventListener("click" , finalizarCompraAct);
 
 function agregar_carro(e){
 
-
     let hijo = e.target;
     let padre = hijo.parentNode;
     let abuelo = padre.parentNode;
@@ -20,7 +19,6 @@ function agregar_carro(e){
     let nombre_juego = padre.querySelector("h4").textContent;
     let precio_juego = padre.querySelector("span").textContent;
     let img_juego = abuelo.querySelector("img").src;
-
 
     let juego = {
         nombre: nombre_juego , 
@@ -48,9 +46,7 @@ function agregar_carro(e){
     
 }
 
-
 function ver_carro(juego){
-
 
     const titulo_carrito = tabla.getElementsByClassName("tituloCarrito");
 
@@ -58,7 +54,6 @@ function ver_carro(juego){
 
         if (titulo_carrito[i].innerText === juego.nombre) {
             let cantidad = titulo_carrito[i].parentElement.querySelector(".inputCantidad");
-
             cantidad.value++;
             actualizar_total_compra();
             return;
@@ -74,22 +69,14 @@ function ver_carro(juego){
 
     fila.classList.add("juegoCarrito");
 
-
-
     tabla.append(fila);
 
-    
-
-
     let boton_borrar = document.querySelectorAll(".botonBorrar");
-
 
     for( let boton of boton_borrar){
 
         boton.addEventListener("click" , borrar_juego);
     }
-
-    // let juego_cantidad = 
     
     fila.querySelector(".inputCantidad").addEventListener("change" , agregar_cantidad);
 
@@ -98,11 +85,6 @@ actualizar_total_compra();
 }
 
 function borrar_juego(e){
-
-    
-    // let abuelo = e.target.parentNode.parentNode;
-
-    // abuelo.remove();
 
     let borrar_valor = e.target;
 
@@ -124,7 +106,6 @@ function borrar_juego(e){
 function actualizar_total_compra(){
     let total = 0;
     
-
     let juegos_carrito = document.querySelectorAll(".juegoCarrito")
 
     juegos_carrito.forEach(juego_carrito => {
@@ -134,11 +115,9 @@ function actualizar_total_compra(){
         let juego_carrito_cant = parseFloat(juego_carrito_cant_el.value);
 
         total = total + juego_carrito_precio * juego_carrito_cant;
-
     })
 
     total_carrito.innerHTML = `$ ${total}`;
-
 }
 
 function agregar_cantidad(e){
@@ -161,7 +140,6 @@ function agregar_cantidad(e){
 }
 
 function finalizarCompraAct() {
-
 
     if (parseFloat(total_carrito.textContent.replace("$" , "")) === 0) {
         Swal.fire({
@@ -189,7 +167,6 @@ function finalizarCompraAct() {
         }
     }
 }
-
 
 // VER-OCULTAR CARRITO
 
